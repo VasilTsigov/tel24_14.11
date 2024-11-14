@@ -25,33 +25,49 @@ Ext.define('MyApp.view.Home', {
     tabBarPosition: 'bottom',
 
     items: [
-        // TODO - Replace the content of this view to suit the needs of your application.
+
         {
-            title: 'Home',
+            title: 'Начало',
             iconCls: 'x-fa fa-home',
             layout: 'fit',
-            // The following grid shares a store with the classic version's grid as well!
+            items: [{
+                xtype: 'homepanel',
+            }]
+        },
+        {
+            title: 'ИАГ',
+            iconCls: 'x-fa fa-users',
+            layout: 'fit',
             items: [{
                 xtype: 'iagnestedlist',
             }]
         },{
-            title: 'Users',
-            iconCls: 'x-fa fa-user',
-            bind: {
-                html: '{loremIpsum}'
-            }
-        },{
-            title: 'Groups',
+            title: 'РДГ',
             iconCls: 'x-fa fa-users',
+            layout: 'fit',
+            items: [{
+                xtype: 'rdgnestedlist',
+            }]
+        },{
+            title: 'ДП',
+            iconCls: 'x-fa fa-users',
+            layout: 'fit',
+            items: [{
+                xtype: 'dpnestedlist',
+            }]
+        },{
+            title: 'Търси',
+            iconCls: 'x-fa fa-search',
             bind: {
                 html: '{loremIpsum}'
             }
         },{
-            title: 'Settings',
-            iconCls: 'x-fa fa-cog',
-            bind: {
-                html: '{loremIpsum}'
-            }
+            title: 'Относно',
+            iconCls: 'x-fa fa-user',
+            layout: 'fit',
+            items: [{
+                xtype: 'aboutpanel',
+            }]
         }
     ]
 });

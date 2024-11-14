@@ -1,8 +1,8 @@
-Ext.define('MyApp.view.iag.IagNestedList',{
+Ext.define('MyApp.view.iag.DpNestedList',{
     extend: 'Ext.NestedList',
-    xtype: 'iagnestedlist',
+    xtype: 'dpnestedlist',
 
-    title: 'Изпълнителна агенция по горите',
+    title: 'Държавни горски предприятия',
 
     displayField: 'text',
 
@@ -18,12 +18,12 @@ Ext.define('MyApp.view.iag.IagNestedList',{
 
 
     store: {
-        storeId: 'iagStore',
+        // storeId: 'iagStore',
         // model: 'MyApp.model.iag.IagModel',
         root: {},
         proxy: {
             type: 'jsonp',
-            url: 'https://vasil.iag.bg/tel/v7/iag_empl',
+            url: 'https://vasil.iag.bg/tel/v7/dp_dgs_empl',
             reader: {
                 type: 'json',
                 rootProperty: 'items',
@@ -32,5 +32,3 @@ Ext.define('MyApp.view.iag.IagNestedList',{
     },
 
 })
-
-

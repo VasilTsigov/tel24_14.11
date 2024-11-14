@@ -7,7 +7,7 @@ Ext.application({
 
     name: 'MyApp',
 
-    // controllers: ['MyApp.controller.IagController'], // Add your controller here
+    // controllers: ['IagController'], // Add your controller here
 
     requires: [
         // This will automatically load all classes in the MyApp namespace
