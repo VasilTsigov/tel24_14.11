@@ -5,7 +5,7 @@
  */
 Ext.define('MyApp.view.Home', {
     extend: 'Ext.tab.Panel',
-    xtype: 'app-main',
+    xtype: 'home-main',
 
     requires: [
         'Ext.MessageBox',
@@ -58,6 +58,9 @@ Ext.define('MyApp.view.Home', {
         },{
             title: 'Търси',
             iconCls: 'x-fa fa-search',
+            items: [{
+                xtype: 'searchpanel',
+            }],
             bind: {
                 html: '{loremIpsum}'
             }

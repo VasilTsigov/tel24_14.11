@@ -12,13 +12,13 @@ Ext.define('MyApp.controller.IagController', {
 
          if (record.get('leaf')) {
             nestedList.getDetailCard().setHtml(
-                `<div style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 10px;">
+                `<div style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 10px; font-size:20px;">
                     <!-- Container for the image and overlay -->
                     <div style="position: relative; display: inline-block;">
                         <!-- Main Image -->
                         <img src="https://vasil.iag.bg/upload/${record.get('glavpod')}/${record.get('pict')}"
                                 alt="Picture of ${record.get('text')}"
-                                style="width:140px; height:180px; border-radius: 8px;">
+                                style="width:140px; height:auto; border-radius: 8px;">
                     </div>
 
                     <!-- Additional details below the image -->
@@ -33,13 +33,13 @@ Ext.define('MyApp.controller.IagController', {
 
                     <!-- Action buttons for call, SMS, and email -->
                     <div style="display: flex; justify-content: center; gap: 10px; margin-top: 15px;">
-                        <button onclick="window.location.href='tel:${record.get('gsm')}'" style="padding: 8px 12px; border-radius: 5px; border: none; background-color: #4CAF50; color: white; cursor: pointer;">
+                        <button onclick="window.location.href='tel:${record.get('gsm')}'" style="padding: 8px 12px; border-radius: 5px; border: none; background-color: #4CAF50; color: white; cursor: pointer; font-size:20px">
                             Call
                         </button>
-                        <button onclick="window.location.href='sms:${record.get('gsm')}'" style="padding: 8px 12px; border-radius: 5px; border: none; background-color: #2196F3; color: white; cursor: pointer;">
+                        <button onclick="window.location.href='sms:${record.get('gsm')}'" style="padding: 8px 12px; border-radius: 5px; border: none; background-color: #2196F3; color: white; cursor: pointer;font-size:20px">
                             SMS
                         </button>
-                        <button onclick="window.location.href='mailto:${record.get('email')}'" style="padding: 8px 12px; border-radius: 5px; border: none; background-color: #f44336; color: white; cursor: pointer;">
+                        <button onclick="window.location.href='mailto:${record.get('email')}'" style="padding: 8px 12px; border-radius: 5px; border: none; background-color: #f44336; color: white; cursor: pointer;font-size:20px">
                             Email
                         </button>
                     </div>

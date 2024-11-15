@@ -1,9 +1,9 @@
-Ext.define('MyApp.view.iag.AboutPanel', {
+Ext.define('MyApp.view.iag.SearchPanel', {
     extend:'Ext.Panel',
 
-    xtype: 'aboutpanel',
+    xtype: 'searchpanel',
 
-    title: 'За приложението',
+    title: 'Търсене в базата данни',
 
     requires: [
         'Ext.Panel',
@@ -11,6 +11,9 @@ Ext.define('MyApp.view.iag.AboutPanel', {
         'Ext.Button',
         'Ext.Spacer'
     ],
+
+    controller: 'main',
+    viewModel: 'main',
 
     config: {
         layout: 'vbox',

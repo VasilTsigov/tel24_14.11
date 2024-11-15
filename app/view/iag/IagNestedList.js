@@ -8,9 +8,7 @@ Ext.define('MyApp.view.iag.IagNestedList',{
 
     controller: 'iagcontroller',
 
-    requires:[
-        'MyApp.store.iag.IagStore',
-    ],
+    // cls: 'custom-nested-list',  // Add a custom class here
 
     detailCard: {
         xtype: 'panel',
@@ -20,21 +18,13 @@ Ext.define('MyApp.view.iag.IagNestedList',{
         itemtap: 'onItemTap'
     },
 
-    store: 'IagStore'
+    store: 'IagStore',
 
-    // store: {
-    //     storeId: 'iagStore',
-    //     // model: 'MyApp.model.iag.IagModel',
-    //     root: {},
-    //     proxy: {
-    //         type: 'jsonp',
-    //         url: 'https://vasil.iag.bg/tel/v7/iag_empl',
-    //         reader: {
-    //             type: 'json',
-    //             rootProperty: 'items',
-    //         }
-    //     }
-    // },
+//     itemTpl: `
+//     <div style="font-size: 20px; color: #333;">
+//         {text}
+//     </div>
+// `
 
 })
 
