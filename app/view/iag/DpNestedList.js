@@ -6,6 +6,10 @@ Ext.define('MyApp.view.iag.DpNestedList',{
 
     displayField: 'text',
 
+    requires:[
+        'MyApp.store.iag.IagStore',
+    ],
+
     controller: 'iagcontroller',
 
     detailCard: {
@@ -17,18 +21,19 @@ Ext.define('MyApp.view.iag.DpNestedList',{
     },
 
 
-    store: {
-        // storeId: 'iagStore',
-        // model: 'MyApp.model.iag.IagModel',
-        root: {},
-        proxy: {
-            type: 'jsonp',
-            url: 'https://vasil.iag.bg/tel/v7/dp_dgs_empl',
-            reader: {
-                type: 'json',
-                rootProperty: 'items',
-            }
-        }
-    },
+    store: 'DpStore',
+    // store: {
+    //     // storeId: 'iagStore',
+    //     // model: 'MyApp.model.iag.IagModel',
+    //     root: {},
+    //     proxy: {
+    //         type: 'jsonp',
+    //         url: 'https://vasil.iag.bg/tel/v7/dp_dgs_empl',
+    //         reader: {
+    //             type: 'json',
+    //             rootProperty: 'items',
+    //         }
+    //     }
+    // },
 
 })

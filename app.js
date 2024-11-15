@@ -7,6 +7,16 @@ Ext.application({
 
     name: 'MyApp',
 
+    stores: [
+        'MyApp.store.iag.IagStore',
+        'MyApp.store.iag.RdgStore',
+        'MyApp.store.iag.DpStore'
+    ], 
+
+    controllers: [
+        // 'MyApp.controller.IagController'
+    ],
+
     // controllers: ['IagController'], // Add your controller here
 
     requires: [

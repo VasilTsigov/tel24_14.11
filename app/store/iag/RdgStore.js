@@ -1,15 +1,15 @@
-Ext.define('MyApp.store.iag.IagStore',{
+Ext.define('MyApp.store.iag.RdgStore',{
     extend: 'Ext.data.TreeStore',  
     
-    alias: 'store.iagstore',
+    alias: 'store.rdgstore',
 
-    storeId: 'IagStore',
+    storeId: 'RdgStore',
 
     model: 'MyApp.model.iag.IagModel',
 
     proxy: {
         type: 'jsonp',
-        url: 'https://vasil.iag.bg/tel/v7/iag_empl',
+        url: 'https://vasil.iag.bg/tel/v7/rdg_empl',
         callbackKey: 'callback',
         reader: {
             type: 'json',
