@@ -59,7 +59,7 @@ Ext.define('MyApp.view.Home', {
             title: 'Търси',
             iconCls: 'x-fa fa-search',
             items: [{
-                xtype: 'searchpanel',
+                xtype: 'searchtab',
             }],
             bind: {
                 html: '{loremIpsum}'
